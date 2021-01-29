@@ -52,6 +52,8 @@
 [user]
 	email = contact@vincentrehm.fr
 	name = Vincent REHM
-	signingkey = 5461D0EB463FD2FF
+	signingkey = AD1101E6AEA69745
 [commit]
 	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
