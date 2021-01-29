@@ -25,7 +25,6 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"MagicPython",
 		"Python",
 		"Vintage"
 	],
