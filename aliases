@@ -5,3 +5,7 @@ alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 alias brewsky='brew update && brew upgrade && brew doctor && brew cleanup && brew autoremove && brew outdated'
+# alias brewski='/usr/local/bin/brew update && /usr/local/bin/brew upgrade && /usr/local/bin/brew doctor && /usr/local/bin/brew cleanup && /usr/local/bin/brew autoremove && /usr/local/bin/brew outdated'
+# alias arm='env /usr/bin/arch -arm64 /bin/zsh --login'
+# alias intel='env /usr/bin/arch -x86_64 /bin/zsh --login'
+# alias brewintel='/usr/local/bin/brew'

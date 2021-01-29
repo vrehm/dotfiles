@@ -60,3 +60,18 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+# Native Homebrew installation
+eval $(/opt/homebrew/bin/brew shellenv)
+eval "$(rbenv init -)"
+
+export LDFLAGS="-L/usr/local/lib"
+export CFLAGS="-I/usr/local/include"
+export CPPFLAGS="-I/usr/local/include"
+ 
+if type brew &>/dev/null; then
+   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+   autoload -Uz compinit
+   compinit
+fi
